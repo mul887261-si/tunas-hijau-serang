@@ -1,0 +1,61 @@
+/* Reset & variabel */
+:root{--hijau:#2e7d32;--hijau-tua:#1b5e20;--hijau-muda:#e8f5e9;--aksen:#ffb300;--teks:#263238;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;color:var(--teks);background:#f7faf7;line-height:1.7}
+.container{width:90%;max-width:1000px;margin:0 auto}
+
+/* Header & Navigasi */
+header{background:var(--hijau);color:#fff;padding:14px 0;position:sticky;top:0;z-index:10;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+header .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.brand{display:flex;align-items:center;gap:10px;font-size:1.25rem;font-weight:700}
+.brand img{width:42px;height:42px}
+nav ul{list-style:none;display:flex;gap:6px;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;padding:8px 14px;border-radius:20px;font-weight:500}
+nav a:hover{background:var(--hijau-tua)}
+nav a.aktif{background:var(--aksen);color:#222}
+
+/* Hero */
+.hero{background:var(--hijau-muda);padding:40px 0}
+.hero .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));align-items:center;gap:30px}
+.hero-teks{flex:1 1 320px}
+.hero-teks h1{font-size:2.1rem;color:var(--hijau-tua);line-height:1.3;margin-bottom:12px}
+.hero img{width:100%;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.tombol{display:inline-block;margin-top:14px;background:var(--hijau);color:#fff;padding:10px 22px;border-radius:25px;text-decoration:none;font-weight:600}
+.tombol:hover{background:var(--hijau-tua)}
+.page-title{background:var(--hijau-muda);padding:30px 0;border-bottom:4px solid var(--aksen)}
+.page-title h1{color:var(--hijau-tua)}
+
+/* Konten */
+main{padding:30px 0}
+section{margin-bottom:34px}
+h2{color:var(--hijau-tua);margin-bottom:10px;border-left:6px solid var(--aksen);padding-left:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.kartu{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.kartu img{width:100%;display:block}
+.kartu .isi{padding:14px 16px}
+.kartu h3{color:var(--hijau);margin-bottom:4px}
+.kotak{background:#fff;padding:18px 22px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.kotak ul,.kotak ol{margin-left:22px}
+.statistik{display:flex;gap:16px;flex-wrap:wrap;text-align:center}
+.statistik div{flex:1 1 150px;background:var(--hijau);color:#fff;padding:16px;border-radius:10px}
+.statistik strong{display:block;font-size:1.8rem;color:var(--aksen)}
+.dua-kolom{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;align-items:center}
+.dua-kolom img{width:100%;border-radius:10px}
+
+/* Tabel */
+.tabel-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+caption{caption-side:top;text-align:left;font-weight:700;padding:8px 0;color:var(--hijau-tua)}
+th,td{padding:11px 14px;border:1px solid #c8e6c9;text-align:left}
+thead th{background:var(--hijau);color:#fff}
+tbody tr:nth-child(even){background:var(--hijau-muda)}
+tbody tr:hover{background:#fff8e1}
+
+/* Form kontak */
+label{display:block;font-weight:600;margin-top:10px}
+input,textarea{width:100%;padding:9px;border:1px solid #aaa;border-radius:6px;font:inherit}
+button{margin-top:14px;background:var(--hijau);color:#fff;border:0;padding:10px 24px;border-radius:25px;font:inherit;cursor:pointer}
+
+/* Footer */
+footer{background:var(--hijau-tua);color:#e0e0e0;text-align:center;padding:20px 0;font-size:.9rem}
+footer a{color:var(--aksen)}
